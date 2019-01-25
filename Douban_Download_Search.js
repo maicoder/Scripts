@@ -16,6 +16,11 @@
 // keyword1 keyword2 我测试效果一样，都代指关键字
 // 我不会代码，只是代码搬动工，别问我XX是什么意思
 
+// by MX
+// 2019.1.25 版本1.4
+// 豆瓣读书添加 CSDN, mebook, SaltTiger
+// 
+
 function run () {
 	var movieTitle = $('h1 span:eq(0)').text();
 	var title = $('html head title').text();
@@ -46,6 +51,10 @@ function run () {
 	];
 
 	var Book_links = [
+        { html: "CSDN", href: "https://so.csdn.net/so/search/s.do?q=" + keyword1 + "&t=doc&o=&s=all&l=" },
+        { html: "mebook", href: "http://mebook.cc/?s=" + keyword1 },
+        { html: "SaltTiger", href: "https://salttiger.com/?s=" + keyword1 },
+        { html: "SmteBooks", href: "https://smtebooks.eu/Search?SearchTerm=" + keyword1 },
 		{ html: "百度盘", href: "https://www.google.com/search?q=" + keyword1 + " site:pan.baidu.com"},
 		{ html: "mLook", href: "http://www.mlook.mobi/search?q=" + keyword2 },
 		{ html: "VeryCD", href: "http://www.verycd.com/search/folders/" + keyword2 },
