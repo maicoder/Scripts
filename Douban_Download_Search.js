@@ -18,8 +18,8 @@
 
 // by MX
 // 2019.1.25 版本1.4
-// 豆瓣读书添加 CSDN, mebook, SaltTiger
-// 
+// 豆瓣读书添加 CSDN, mebook, SaltTiger, SmteBooks
+// 豆瓣电影添加 pniao
 
 function run () {
 	var movieTitle = $('h1 span:eq(0)').text();
@@ -29,9 +29,10 @@ function run () {
 	var movieSimpleTitle = movieTitle.replace(/第\S+季.*/, "");
 
 	var Movie_links = [
+        { html: "电影首发站", href: "https://www.dysfz.tv/key/" + keyword1 + "/"},
+        { html: "胖鸟电影", href: "http://www.pniao.com/Mov/so/" + keyword1},
 		{ html: "MAG 磁力站", href: "http://oabt004.com/index?k=" + movieSimpleTitle },
 		{ html: "天天看美剧", href: "http://www.msj1.com/?s=" + keyword1 },
-        { html: "电影首发站", href: "https://www.dysfz.tv/key/" + keyword1 + "/"},
         { html: "高清电台", href: "https://gaoqing.fm/s.php?q=" + keyword1 },
         { html: "不太灵", href: "https://bt0.com/search/" + keyword1 },
         { html: "音范丝", href: "http://www.yinfans.com/?s=" + keyword1 },
