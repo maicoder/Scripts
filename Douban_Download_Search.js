@@ -49,8 +49,10 @@ function run () {
 
 	var Online_links = [
 		{ html: "Neets 追剧管家", href: "https://neets.cc/search?key=" + keyword1 },
-		{ html: "AGMJ 阿哥美剧", href: "http://ajmeiju.com/search/kw/" + keyword1 },
+		
 	];
+// chrome 上无法使用
+// { html: "AGMJ 阿哥美剧", href: "http://ajmeiju.com/search/kw/" + keyword1 },
 
 	var Book_links = [
         { html: "CSDN", href: "https://so.csdn.net/so/search/s.do?q=" + keyword1 + "&t=doc&o=&s=all&l=" },
