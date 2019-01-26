@@ -18,8 +18,9 @@
 
 // by MX
 // 2019.1.25 版本1.4
+// 2019.1.26 版本1.5
 // 豆瓣读书添加 CSDN, mebook, SaltTiger, SmteBooks
-// 豆瓣电影添加 pniao
+// 豆瓣电影添加 pniao，fantexitv 删除 AGMJ
 
 function run () {
 	var movieTitle = $('h1 span:eq(0)').text();
