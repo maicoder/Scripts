@@ -29,6 +29,7 @@ function run () {
 	var movieSimpleTitle = movieTitle.replace(/第\S+季.*/, "");
 
 	var Movie_links = [
+		{ html: "人人影视", href: "http://www.zimuzu.io/search/index?keyword=" + keyword1 + "&search_type=" },
         { html: "电影首发站", href: "https://www.dysfz.tv/key/" + keyword1 + "/"},
         { html: "胖鸟电影", href: "http://www.pniao.com/Mov/so/" + keyword1},
 		{ html: "MAG 磁力站", href: "http://oabt004.com/index?k=" + movieSimpleTitle },
