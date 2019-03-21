@@ -29,10 +29,11 @@ function run () {
 	var keyword2 = encodeURIComponent( keyword1 );
 	var movieSimpleTitle = movieTitle.replace(/第\S+季.*/, "");
 
+	// 电影首发站和胖鸟电影已失效
+	// { html: "电影首发站", href: "https://www.dysfz.tv/key/" + keyword1 + "/"},
+	// { html: "胖鸟电影", href: "http://www.pniao.com/Mov/so/" + keyword1},
 	var Movie_links = [
 		{ html: "人人影视", href: "http://www.zimuzu.io/search/index?keyword=" + keyword1 + "&search_type=" },
-        { html: "电影首发站", href: "https://www.dysfz.tv/key/" + keyword1 + "/"},
-        { html: "胖鸟电影", href: "http://www.pniao.com/Mov/so/" + keyword1},
 		{ html: "MAG 磁力站", href: "http://oabt004.com/index?k=" + movieSimpleTitle },
 		{ html: "天天看美剧", href: "http://www.msj1.com/?s=" + keyword1 },
         { html: "高清电台", href: "https://gaoqing.fm/s.php?q=" + keyword1 },
