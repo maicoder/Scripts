@@ -22,6 +22,10 @@
 // 豆瓣读书添加 CSDN, mebook, SaltTiger, SmteBooks
 // 豆瓣电影添加 pniao，fantexitv 删除 AGMJ
 
+// by MX
+// 2019.04.03 版本1.6
+// 豆瓣电影删除 pniao，dysfz，fantexitv 
+
 function run () {
 	var movieTitle = $('h1 span:eq(0)').text();
 	var title = $('html head title').text();
@@ -51,10 +55,10 @@ function run () {
 
 	var Online_links = [
 		{ html: "Neets 追剧管家", href: "https://neets.cc/search?key=" + keyword1 },
-		{ html: "范特西视频", href: "https://www.fantexitv.com/search.html?search=" + keyword1 },
 	];
 // chrome 上无法使用
 // { html: "AGMJ 阿哥美剧", href: "http://ajmeiju.com/search/kw/" + keyword1 },
+// { html: "范特西视频", href: "https://www.fantexitv.com/search.html?search=" + keyword1 },
 
 	var Book_links = [
         { html: "CSDN", href: "https://so.csdn.net/so/search/s.do?q=" + keyword1 + "&t=doc&o=&s=all&l=" },
