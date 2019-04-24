@@ -14,12 +14,20 @@
     // Your code here...
 
     let deleteEle = document.querySelector('#content > div.grid-16-8.clearfix > div.article > div.app-list > div:nth-child(1) > div.content > div.user-operation > a.j.a_confirm_link');
-    let itemUrl = deleteEle.href;
+    if (deleteEle) {
+        let itemUrl = deleteEle.href;
 
-    let http = new XMLHttpRequest();
-    http.open("GET", itemUrl);
-    http.send();
+        let http = new XMLHttpRequest();
+        http.open("GET", itemUrl);
+        http.send();
 
-    location.reload();
+        window.onload = function () {
+            setInterval(() => {
+                window.location.reload();
+            }, 3000);
+        }
+    }
+    
+    
 
 })();
