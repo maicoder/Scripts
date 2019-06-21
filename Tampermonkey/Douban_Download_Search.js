@@ -26,6 +26,10 @@
 // 2019.04.03 版本1.6
 // 豆瓣电影删除 pniao，dysfz，fantexitv 
 
+// by MX
+// 2019.06.21 版本1.7
+// fix bug zimuzu.io to zmz2019.com
+
 function run () {
 	var movieTitle = $('h1 span:eq(0)').text();
 	var title = $('html head title').text();
@@ -37,7 +41,7 @@ function run () {
 	// { html: "电影首发站", href: "https://www.dysfz.tv/key/" + keyword1 + "/"},
 	// { html: "胖鸟电影", href: "http://www.pniao.com/Mov/so/" + keyword1},
 	var Movie_links = [
-		{ html: "人人影视", href: "http://www.zimuzu.io/search/index?keyword=" + keyword1 + "&search_type=" },
+		{ html: "人人影视", href: "http://www.zmz2019.com/search/index?keyword=" + keyword1 + "&search_type=" },
 		{ html: "MAG 磁力站", href: "http://oabt004.com/index?k=" + movieSimpleTitle },
 		{ html: "天天看美剧", href: "http://www.msj1.com/?s=" + keyword1 },
         { html: "高清电台", href: "https://gaoqing.fm/s.php?q=" + keyword1 },
